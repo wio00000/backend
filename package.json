@@ -1,0 +1,14 @@
+{
+  "name": "w3-logistica-rute",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "test": "tsx --test src/services/route-stop-service.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
