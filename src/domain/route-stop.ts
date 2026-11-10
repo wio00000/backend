@@ -7,6 +7,20 @@ export type RouteStopStatus =
   | "RETUR_PARTIAL"
   | "ANULAT";
 
+const routeStopStatuses: RouteStopStatus[] = [
+  "DE_LIVRAT",
+  "PLECAT",
+  "AJUNS",
+  "LIVRAT",
+  "REFUZAT",
+  "RETUR_PARTIAL",
+  "ANULAT"
+];
+
+export function isRouteStopStatus(value: unknown): value is RouteStopStatus {
+  return typeof value === "string" && routeStopStatuses.includes(value as RouteStopStatus);
+}
+
 export interface RouteStop {
   id: string;
   orderId: string;
