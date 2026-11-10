@@ -4,11 +4,16 @@
   "private": true,
   "scripts": {
     "test": "tsx --test src/services/route-stop-service.test.ts",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "start": "tsx src/server.ts"
   },
   "devDependencies": {
+    "@types/express": "^5.0.6",
     "@types/node": "^22.10.0",
     "tsx": "^4.19.2",
     "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
   }
 }
